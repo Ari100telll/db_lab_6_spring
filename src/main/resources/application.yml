@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:mysql://localhost:3306/horb_db?serverTimezone=UTC}
+    username: ${JDBC_DATABASE_USERNAME:root}
+    password: ${JDBC_DATABASE_PASSWORD:lop00100poly}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
