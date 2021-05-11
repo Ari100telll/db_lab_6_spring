@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:mysql://localhost:3306/Horb_db?serverTimezone=UTC}
-    username: ${JDBC_DATABASE_USERNAME:ari100tel}
-    password: ${JDBC_DATABASE_PASSWORD:lop00100pol}
+    url: ${JDBC_DATABASE_URL:jdbc:mysql://${DB_URL}:3306/${DB_NAME}?serverTimezone=UTC}
+    username: ${JDBC_DATABASE_USERNAME:${DB_USERNAME}}
+    password: ${JDBC_DATABASE_PASSWORD:${DB_PASSWORD}}
   jpa:
     hibernate:
       ddl-auto: validate
